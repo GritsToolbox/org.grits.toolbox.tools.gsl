@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="org.grits.toolbox.tools.gsl.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.grits.toolbox.core.preferencePages">
+      <page
+            category="org.grits.toolbox.entry.ms.topLevel"
+            class="org.grits.toolbox.tools.gsl.wizard.preference.MSGlycolipidAnnotationTopLevelPreferencePage"
+            id="org.grits.toolbox.tools.gsl.preference.annotation"
+            name="MS Glycolipid Annotation">
+      </page>
+      <page
+            category="org.grits.toolbox.tools.gsl.preference.annotation"
+            class="org.grits.toolbox.tools.gsl.wizard.preference.MSGlycolipidAnnotationPreferencePage"
+            id="org.grits.toolbox.tools.gsl.preference.annotation.settings"
+            name="Annotation Settings">
+      </page>
+   </extension>
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.tools.gsl.annotation.entry.property.io.MSGlycolipidAnnotationPropertyReader"
+            propertyId="org.grits.toolbox.property.ms_annotation.glycolipid">
+      </reader>
+      <reader
+            class="org.grits.toolbox.tools.gsl.report.entry.property.io.MSGlycolipidAnnotationReportPropertyReader"
+            propertyId="org.grits.toolbox.property.report.ms_annotation_merge.glycolipid">
+      </reader>
+   </extension>
+
+</plugin>

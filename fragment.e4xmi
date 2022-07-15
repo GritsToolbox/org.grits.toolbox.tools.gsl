@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IQo80PrBEeagd5gtTexSrQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_KUJFoPrBEeagd5gtTexSrQ" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_EmozcPrFEeagd5gtTexSrQ" elementId="org.grits.toolbox.tools.gsl.menu.gsl" label="Glycolipid Tools">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_tALksP0jEeaVYdJ3mnoAaw" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.database" label="Create Lipid Database" command="_iNOBUPrGEeagd5gtTexSrQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_lG-4ICUVEeeo44r160rV6w" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.gslannotation" label="MS DANGO Annotation" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/IconAnnotation.png" command="_YLGQgCUVEeeo44r160rV6w"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_e1IVgKU7EeeDA5bWNny1Hw" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.lipidmasscalculator" label="Lipid Mass Calculator" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/LipidCalculator.png" command="_QQVPUKU7EeeDA5bWNny1Hw"/>
+    </elements>
+    <elements xsi:type="menu:Menu" xmi:id="_LoJ14DacEeiXFsaiqM6UUw" elementId="org.grits.toolbox.tools.gsl.menu.msglycolipidannotation" label="MS Glycolipid Annotation">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_U5dCIDacEeiXFsaiqM6UUw" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.export" label="Export" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan/icons/Export.png" command="_mAiUUDabEeiXFsaiqM6UUw"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZD0M0PrGEeagd5gtTexSrQ" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_iNOBUPrGEeagd5gtTexSrQ" elementId="org.grits.toolbox.tools.gsl.command.gsldatabase" commandName="Lipid Database"/>
+    <elements xsi:type="commands:Command" xmi:id="_YLGQgCUVEeeo44r160rV6w" elementId="org.grits.toolbox.tools.gsl.command.annotation" commandName="MS DANGO Annotation"/>
+    <elements xsi:type="commands:Command" xmi:id="_QQVPUKU7EeeDA5bWNny1Hw" elementId="org.grits.toolbox.tools.gsl.command.lipidmasscalculator" commandName="Lipid Mass Calculator"/>
+    <elements xsi:type="commands:Command" xmi:id="_m61twBsuEeizCbXAPzcxcQ" elementId="org.grits.toolbox.tools.gsl.command.viewMSGlycolipidAnnotationResults" commandName="View MS Glycolipid Annotation Results"/>
+    <elements xsi:type="commands:Command" xmi:id="_mAiUUDabEeiXFsaiqM6UUw" elementId="org.grits.toolbox.tools.gsl.command.export" commandName="Export"/>
+    <elements xsi:type="commands:Command" xmi:id="_4ravYHQCEeiuOqUb0r6j-A" elementId="org.grits.toolbox.tools.gsl.command.report" commandName="MS DANGO Merge Report"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__fkRIP0jEeaVYdJ3mnoAaw" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_IBAGsP0kEeaVYdJ3mnoAaw" elementId="org.grits.toolbox.tools.gsl.handler.database.create" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.handler.CreateDatabaseHandler" command="_iNOBUPrGEeagd5gtTexSrQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_bn5HgCUVEeeo44r160rV6w" elementId="org.grits.toolbox.tools.gsl.handler.annotation" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.handler.OpenDANGOWizardHandler" command="_YLGQgCUVEeeo44r160rV6w"/>
+    <elements xsi:type="commands:Handler" xmi:id="_AJV9oKU7EeeDA5bWNny1Hw" elementId="org.grits.toolbox.tools.gsl.handler.calculator.mass.lipid" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.handler.LipidMassCalculatorHandler" command="_QQVPUKU7EeeDA5bWNny1Hw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_vEq7oBsuEeizCbXAPzcxcQ" elementId="org.grits.toolbox.tools.gsl.handler.view.annotation" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.annotation.entry.handler.ViewMSGlycolipidAnnotationResults" command="_m61twBsuEeizCbXAPzcxcQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_qrAfYDabEeiXFsaiqM6UUw" elementId="org.grits.toolbox.tools.gsl.handler.export" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.annotation.entry.handler.MSGlycolipidAnnotationExportCommand" command="_mAiUUDabEeiXFsaiqM6UUw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_JmkB4HQDEeiuOqUb0r6j-A" elementId="org.grits.toolbox.tools.gsl.handler.report" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.report.entry.handler.MSGlycolipidAnnotationReportHandler" command="_4ravYHQCEeiuOqUb0r6j-A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__UqooEJDEeeCrpjDiCVZZQ" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_GDiUYEJEEeeCrpjDiCVZZQ" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.annotation" label="MS DANGO Annotation" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/IconAnnotation.png" command="_YLGQgCUVEeeo44r160rV6w"/>
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_kiutYHQDEeiuOqUb0r6j-A" elementId="org.grits.toolbox.tools.gsl.handledmenuitem.report" label="MS DANGO Merge Report" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/merge.png" command="_4ravYHQCEeiuOqUb0r6j-A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_D0fu8AB7EeiC58zJpUTQyA" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_J_re0AB7EeiC58zJpUTQyA" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3LB3kAB7EeiC58zJpUTQyA" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_J7qsEAB8EeiC58zJpUTQyA" elementId="org.grits.toolbox.tools.gsl.partdescriptor.msglycolipidannotation" label="MS Glycolipid Annotation Overview" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/IconAnnotation.png" bindingContexts="_J_re0AB7EeiC58zJpUTQyA" allowMultiple="true" category="org.grits.toolbox.property.ms_annotation.glycolipid" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.annotation.entry.views.tabbed.MSGlycolipidAnnotationMultiPageViewer">
+      <tags>default</tags>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_TLl30BgAEeizCbXAPzcxcQ" elementId="org.grits.toolbox.tools.gsl.partdescriptor.msdangoannotation2" label="MS Glycolipid Annotation" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/IconAnnotation.png" bindingContexts="_J_re0AB7EeiC58zJpUTQyA" allowMultiple="true" category="org.grits.toolbox.tools.gsl.annotation.entry.property.MSGlycolipidAnnotationEntityProperty" closeable="true" contributionURI="bundleclass://org.grits.toolbox.tools.gsl/org.grits.toolbox.tools.gsl.annotation.entry.views.tabbed.MSGlycolipidAnnotationMultiPageViewer">
+      <toolbar xmi:id="_amDeQBgAEeizCbXAPzcxcQ" elementId="org.grits.toolbox.tools.gsl.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_K-xyoDalEeiXFsaiqM6UUw" elementId="org.grits.toolbox.tools.gsl.handledtoolitem.export" label="Export" iconURI="platform:/plugin/org.grits.toolbox.entry.ms.annotation.glycan/icons/Export.png" tooltip="Export annotation results" command="_mAiUUDabEeiXFsaiqM6UUw"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9upK4HTBEeiSpbY0p6z3KA" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_QzvMcHTCEeiSpbY0p6z3KA" elementId="org.grits.toolbox.tools.gsl.partdescriptor.MSGlycolipidAnnotationReportMultiPageViewer" label="MS DANGO Annotation Merge Report" iconURI="platform:/plugin/org.grits.toolbox.tools.gsl/icons/merge.png" bindingContexts="_J_re0AB7EeiC58zJpUTQyA" allowMultiple="true" category="org.grits.toolbox.property.report.ms_annotation_merge.glycolipid" closeable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms.annotation.glycan.report/org.grits.toolbox.entry.ms.annotation.glycan.report.views.MSGlycanAnnotationReportMultiPageViewer"/>
+  </fragments>
+</fragment:ModelFragments>

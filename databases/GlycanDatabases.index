@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<databaseIndex>
+    <database name="Ganglioside glycans" description="Glycosphingolipid glycans from the Figure 10.2 of Essentials of Glycobiology." structures="27" file="Ganglioside-Glycan.xml"/>
+    <database name="Ganglioside glycans with NeuGc" description="Glycosphingolipid glycans containing NeuGc from the Figure 10.2 of Essentials of Glycobiology." structures="168" file="Ganglioside-Glycan-withGc.xml"/>
+    <database name="GSL glycans" description="Glycosphingolipid glycans from the GlycO ontology." structures="285" file="GSL-Glycan.xml"/>
+    <database name="GSL glycans (topology)" description="Glycosphingolipid glycans topologies (no linkage information) from the GlycO ontology" structures="225" file="GSL-Glycan-topology.xml"/>
+    <database name="GSL glycans extend (topology)" description="Added some GSL Glycan suggested by Kazuhiro to GSL-Glycan (Topology) databse" structures="249" file="GSL-Glycan-extend-topology.xml"/>
+</databaseIndex>

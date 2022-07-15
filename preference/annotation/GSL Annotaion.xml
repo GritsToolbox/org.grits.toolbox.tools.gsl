@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<msGlycanAnnotationPreference name="GSL Annotaion">
+    <method accuracy="100.0" accuracyPpm="true" annotationSrc="GRITS" annotationType="GLYCAN" fragAccuracy="500.0" fragAccuracyPpm="true" intensityCutoff="0.1" intensityCutoffType="Percentage" maxIonCount="4" monoisotopic="true" precursorIntensityCutoff="0.0" precursorIntensityCutoffType="Percentage" shift="0.0" trustCharge="true" version="1.02">
+        <ion charge="1" polarity="true" label="Na" mass="22.98976967" name="Sodium">
+            <ionCount>4</ionCount>
+        </ion>
+        <ion charge="1" polarity="true" label="H" mass="1.007825032" name="Hydrogen">
+            <ionCount>4</ionCount>
+        </ion>
+        <AnalyteSetting>
+            <GlycanSettings allowInnerFrags="false" maxNumOfCleavages="2" maxNumOfCrossRingCleavages="0" DerivType="perMe">
+                <GlycanFilter database="GSL-Glycan-topology.xml" useDatabaseStructureMetaInfo="false" version="1.0"/>
+                <Fragments number="-1" type="B"/>
+                <Fragments number="-1" type="Y"/>
+                <Fragments number="-1" type="C"/>
+                <Fragments number="-1" type="Z"/>
+            </GlycanSettings>
+            <LipidSettings maxNumOfCleavages="0" DerivType="perMe">
+                <LipidDatabase database="Common ceramides" uri="Ceramide_common.xml"/>
+            </LipidSettings>
+        </AnalyteSetting>
+        <booleanProp/>
+        <doubleProp/>
+        <integerProp/>
+        <stringProp/>
+    </method>
+</msGlycanAnnotationPreference>

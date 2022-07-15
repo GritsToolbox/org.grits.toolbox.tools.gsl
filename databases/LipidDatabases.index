@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<database_list>
+    <index name="Common ceramides" description="Common glycosphingolipid ceramides suggested by Kazuhiro Aoki." structures="176" file="Ceramide_common.xml"/>
+    <index name="Common ceramides extend LCB" description="Common glycosphingolipid ceramides suggested by Mayumi Ishihara" structures="352" file="Ceramide_common_extendLCB.xml"/>
+    <index name="Possible ceramides" description="Possible glycosphingolipid ceramides suggested by Kazuhiro Aoki." structures="42432" file="Ceramide_all.xml"/>
+</database_list>
